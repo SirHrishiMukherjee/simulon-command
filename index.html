@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulon Command Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Simulon Command Center</h1>
+  <div class="tabs">
+    <button class="tab-button active" data-tab="alpha">Unit Alpha</button>
+    <button class="tab-button" data-tab="beta">Unit Beta</button>
+    <button class="tab-button" data-tab="gamma">Unit Gamma</button>
+  </div>
+  <div class="tab-content active" id="alpha">
+    <h2>Unit Alpha</h2>
+    <p>Status: Ready</p>
+  </div>
+  <div class="tab-content" id="beta">
+    <h2>Unit Beta</h2>
+    <p>Status: Deploying</p>
+  </div>
+  <div class="tab-content" id="gamma">
+    <h2>Unit Gamma</h2>
+    <p>Status: Standby</p>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
