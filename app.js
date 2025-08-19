@@ -9,3 +9,9 @@ document.querySelectorAll('.tab-button').forEach(button => {
     document.getElementById(tabId).classList.add('active');
   });
 });
+
+document.getElementById('run-simulang').addEventListener('click', () => {
+  const script = document.getElementById('simulang-input').value;
+  const output = window.runSimuLang(script);
+  document.getElementById('simulang-output').textContent = output;
+});
